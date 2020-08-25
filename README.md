@@ -12,7 +12,7 @@ Each movie in the database has an ​id ​(long), ​name (varchar), ​rating�
 
 ./mvnw spring-boot:run
 
-### Create a new movie:
+### Add a new movie:
 
 curl -i -H "Content-Type:application/json" -d '{"id": "1", "name": "Cat", "rating": "2", "description": "Cartoon"}' http://localhost:8080/movies
 
@@ -28,21 +28,21 @@ curl -i -H "Content-Type:application/json" -d '{"id": "5", "name": "Titanic", "r
 
 curl http://localhost:8080/movies
 
-### Query individual movie by ID:
+### Search movie by ID:
 
 curl http://localhost:8080/movies/1
 
-### Query movie by name:
+### Search movie by name:
 
 curl http://localhost:8080/movies/search/findByName?name=Cat
 
-### Replace/Add movie record:
+### Replace/Add movie:
 
 curl -X PUT -H "Content-Type:application/json" -d '{"id": "2", "name": "Rain", "rating": "2", "description": "Story"}' http://localhost:8080/movies/2
 
-### Update movie information:
+### Update movie:
 
-curl -X PATCH -H "Content-Type:application/json" -d '{"name": "Cat"}' http://localhost:8080/movies/1
+curl -X PATCH -H "Content-Type:application/json" -d '{"description": "Classic"}' http://localhost:8080/movies/5
 
 ### Remove movie:
 
