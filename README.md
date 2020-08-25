@@ -8,7 +8,9 @@ Each movie in the database has an ​id ​(long), ​name (varchar), ​rating�
 
 ### Import as a Maven project
 
-### Run the application by using ./mvnw spring-boot:run
+### Run the application
+
+./mvnw spring-boot:run
 
 ### Create a new movie:
 
