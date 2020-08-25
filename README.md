@@ -1,8 +1,8 @@
 # Movie DB with RESTful front end
 
-This is a Spring application for a movie database with a hypermedia-based RESTful front end.
+This is a Spring application for accessing a movie database in relational JPA with a hypermedia-based RESTful front end. It is built using Spring Boot, JPA and H2.
 
-This application is built using Spring Boot, JPA and H2, following the guide: https://spring.io/guides/gs/accessing-data-rest
+Reference: https://spring.io/guides/gs/accessing-data-rest
 
 Each movie in the database has an ​id ​(long), ​name (varchar), ​rating​ from 1 to 10 (int), and a ​description​ (varchar).
 
