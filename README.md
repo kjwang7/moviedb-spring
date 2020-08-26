@@ -34,15 +34,15 @@ curl http://localhost:8080/movies/1
 
 curl http://localhost:8080/movies/search/findByName?name=Cat
 
-**4. Replace/Add movies.** For example:
+**5. Replace/Add movies.** For example:
 
 curl -X PUT -H "Content-Type:application/json" -d '{"id": "2", "name": "Rain", "rating": "2", "description": "Story"}' http://localhost:8080/movies/2
 
-**5. Update movie.** For example:
+**6. Update movie.** For example:
 
 curl -X PATCH -H "Content-Type:application/json" -d '{"description": "Classic"}' http://localhost:8080/movies/5
 
-**6. Remove movie.** For example:
+**7. Remove movie.** For example:
 
 curl -X DELETE http://localhost:8080/movies/1
 
