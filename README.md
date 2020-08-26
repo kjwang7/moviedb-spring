@@ -46,5 +46,4 @@ curl -X PATCH -H "Content-Type:application/json" -d '{"description": "Classic"}'
 
 curl -X DELETE http://localhost:8080/movies/1
 
-This application is created following this guide:
-Reference: https://spring.io/guides/gs/accessing-data-rest
+This application is created following this guide: https://spring.io/guides/gs/accessing-data-rest
